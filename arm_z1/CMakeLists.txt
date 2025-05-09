@@ -15,7 +15,7 @@ find_package(tf2_ros REQUIRED)
 find_package(geometry_msgs REQUIRED)
 
 include_directories(
-  include
+  include /usr/include/eigen3
 )
 
 link_directories(lib)
@@ -24,6 +24,8 @@ link_directories(lib)
 
 
 add_executable(static_arm_transformations src/static_arm_transformations.cpp)
+add_executable(pick_and_place src/pick_and_place.cpp)
+target_link_libraries(pick_and_place ${catkin_LIBRARIES})
 
 
 

@@ -12,7 +12,7 @@ public:
     geometry_msgs::msg::TransformStamped static_transform;
     static_transform.header.frame_id = "arm_base_link";
     static_transform.child_frame_id = "lower_position";
-    static_transform.transform.translation.x = 0.30;  
+    static_transform.transform.translation.x = 0.30;
     static_transform.transform.translation.y = 0.0;
     static_transform.transform.translation.z = 0.10;
 

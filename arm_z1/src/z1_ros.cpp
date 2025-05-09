@@ -28,7 +28,7 @@ public:
         tf_buffer_ = std::make_unique<tf2_ros::Buffer>(this->get_clock());
         tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
 
-        
+
 
         //Initalise the arm communication
         std::cout << "STARTING ARM CALIBRATION" << std::endl;
